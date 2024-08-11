@@ -20,7 +20,9 @@ services:
       MYSQL_DATABASE: mydatabase
       MYSQL_USER: myuser
       MYSQL_PASSWORD: mypassword
-      MYSQL_ROOT_PASSWORD: rootpassword  # Root password for MySQL
+      MYSQL_ROOT_PASSWORD: rootpassword
 
 volumes:
   mysql_data:
+  myvolume:
+    external: true
